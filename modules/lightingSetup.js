@@ -2,7 +2,7 @@ import * as THREE from 'three';
 
 export function setupLighting(scene){
   // Hemisphere to provide ambient fill
-  const hemi = new THREE.HemisphereLight(0xffffff, 0x444444, 2.6);
+  const hemi = new THREE.HemisphereLight(0xffffff, 0x444444, 3.6);
   hemi.position.set(10, 50, 0);
   scene.add(hemi);
 
