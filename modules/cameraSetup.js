@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { renderer } from './sceneSetup.js';
 
 // Camera: 50mm approximated to FOV ~39.6 deg
-export const camera = new THREE.PerspectiveCamera(39.6, window.innerWidth / window.innerHeight, 0.1, 2000);
+export const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 2000);
 camera.position.set(5, 4, 6);
 
 // OrbitControls bound to renderer.domElement
