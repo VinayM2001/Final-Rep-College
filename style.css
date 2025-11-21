@@ -55,9 +55,27 @@ canvas { display:block; }
 }
 .compass-button.active { background: var(--btn-primary); color: white; transform: rotate(0.1turn); }
 
+.link-button {
+  position: fixed;
+  left: 18px;
+  top: 26px;
+   padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: var(--btn-neutral);
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 44px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(11,13,35,0.06);
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+}
+.link-button:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(11,13,35,0.08); }
+
 /* responsive tweaks */
 @media (max-width:520px){
   .ui-panel { gap:6px; padding:8px; }
   .ui-button { padding:8px 10px; font-size:14px; min-width:40px; }
   .compass-button { width:50px; height:50px; font-size:20px; }
+  .link-button { padding:8px 10px; font-size:14px; min-width:40px; }
 }
